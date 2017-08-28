@@ -1,0 +1,133 @@
+@import 'colors.scss';
+
+// Customize buttons from skeleton
+.button {
+    font-size: 0.9rem;
+    height: auto;
+    border-width: 2px;
+    border-radius: 2px;
+
+    &.button-primary {
+        // font-size: 1em;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: $purple;
+        border-color: $purple;
+        border-radius: 2px;
+        color: #fff;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: darken($purple, 10);
+            border-color: darken($purple, 10);
+            color: #fff;
+        }
+        &:focus {
+            background-color: darken($purple, 10);
+            border-color: darken($purple, 10);
+            color: #fff;
+        }
+    }
+
+    &.button-primary-outline {
+        background-color: transparent;
+        border-color: $purple;
+        color: $purple;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: $purple;
+            border-color: $purple;
+            color: #fff;
+        }
+        &:focus {
+            background-color: $purple;
+            border-color: $purple;
+            color: #fff;
+        }
+    }
+
+    &.button-secondary {
+        // font-size: 1em;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: $color_paradiso_approx;
+        border-color: $color_paradiso_approx;
+        border-radius: 2px;
+        color: #fff;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: darken($color_paradiso_approx, 10);
+            border-color: darken($color_paradiso_approx, 10);
+            color: #fff;
+        }
+        &:focus {
+            background-color: darken($color_paradiso_approx, 10);
+            border-color: darken($color_paradiso_approx, 10);
+            color: #fff;
+        }
+    }
+
+    &.button-secondary-outline {
+        background-color: transparent;
+        border-color: $color_paradiso_approx;
+        color: $color_paradiso_approx;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: $color_paradiso_approx;
+            border-color: $color_paradiso_approx;
+            color: #fff;
+        }
+        &:focus {
+            background-color: lighten($color_paradiso_approx, 20);
+            border-color: lighten($color_paradiso_approx, 20);
+            color: #fff;
+        }
+    }
+
+    &.button-white {
+        // font-size: 1em;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: $white;
+        border-color: $white;
+        border-radius: 2px;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: lighten($white, 10);
+            border-color: lighten($white, 10);
+        }
+        &:focus {
+            background-color: darken($white, 10);
+            border-color: darken($white, 10);
+        }
+    }
+
+    &.button-white-outline {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            transition: all 0.3s ease;
+            border-color: darken($white, 20);
+            color: darken(#fff, 20);
+        }
+        &:focus {
+            border-color: lighten($white, 20);
+            color: #fff;
+        }
+    }
+
+    &.small {
+        font-size: .8rem;
+        padding: 10px;
+        line-height: .9em;
+        margin: 0;
+        font-weight: 400;
+        border-radius: 2px;
+    }
+}

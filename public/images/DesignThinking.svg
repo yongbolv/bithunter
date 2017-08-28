@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="793px" height="351px" viewBox="0 0 793 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>DesignThinking</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DesignThinking">
+            <polygon id="Polygon" fill="#F05E2C" transform="translate(123.500000, 104.000000) rotate(30.000000) translate(-123.500000, -104.000000) " points="123.5 20 196.246134 62 196.246134 146 123.5 188 50.7538661 146 50.7538661 62"></polygon>
+            <polygon id="Polygon" fill="#477AA0" transform="translate(260.500000, 181.000000) rotate(30.000000) translate(-260.500000, -181.000000) " points="260.5 97 333.246134 139 333.246134 223 260.5 265 187.753866 223 187.753866 139"></polygon>
+            <polygon id="Polygon" fill="#AACC42" transform="translate(397.500000, 104.000000) rotate(30.000000) translate(-397.500000, -104.000000) " points="397.5 20 470.246134 62 470.246134 146 397.5 188 324.753866 146 324.753866 62"></polygon>
+            <polygon id="Polygon" fill="#40B6FF" transform="translate(532.500000, 181.000000) rotate(30.000000) translate(-532.500000, -181.000000) " points="532.5 97 605.246134 139 605.246134 223 532.5 265 459.753866 223 459.753866 139"></polygon>
+            <polygon id="Polygon" fill="#AE3378" transform="translate(666.500000, 258.000000) rotate(30.000000) translate(-666.500000, -258.000000) " points="666.5 174 739.246134 216 739.246134 300 666.5 342 593.753866 300 593.753866 216"></polygon>
+            <text id="EMPATHIZE" font-family="FiraSans-Medium, Fira Sans" font-size="24" font-weight="400" letter-spacing="0.787500024" fill="#FFFFFF">
+                <tspan x="60.7242499" y="108.880799">EMPATHIZE</tspan>
+            </text>
+            <text id="DEFINE" font-family="FiraSans-Medium, Fira Sans" font-size="24" font-weight="400" letter-spacing="0.787500024" fill="#FFFFFF">
+                <tspan x="219.6815" y="187.880799">DEFINE</tspan>
+            </text>
+            <text id="IDEATE" font-family="FiraSans-Medium, Fira Sans" font-size="24" font-weight="400" letter-spacing="0.787500024" fill="#FFFFFF">
+                <tspan x="356.8575" y="111.880799">IDEATE</tspan>
+            </text>
+            <text id="PROTOTYPE" font-family="FiraSans-Medium, Fira Sans" font-size="24" font-weight="400" letter-spacing="0.787500024" fill="#FFFFFF">
+                <tspan x="465.78025" y="187.880799">PROTOTYPE</tspan>
+            </text>
+            <text id="TEST" font-family="FiraSans-Medium, Fira Sans" font-size="24" font-weight="400" letter-spacing="0.787500024" fill="#FFFFFF">
+                <tspan x="638.997" y="264.880799">TEST</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

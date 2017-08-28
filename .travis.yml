@@ -1,0 +1,35 @@
+language: node_js
+
+before_script:
+- npm install -g eslint
+
+before_deploy:
+  - npm run build
+
+node_js:
+  - "6"
+  - "stable"
+
+notifications:
+    slack: tandemly:wrepoJiPgoJWyMwWOsYLPfJX
+
+cache:
+  directories:
+  - node_modules
+
+deploy:
+- provider: firebase
+  skip_cleanup: true
+  token:
+    secure: aVQC/qhpC33jocEb04kn2tBPVUlBAq4RAi+KBAOHEqiN/wMarsuTm5Ndhv5zeOcMNhW05Z0QqGnnctPVS8LAg1qpu8BRrInCo6V4/wiKa187ZXN14Onln6RHKsyRxaL9zpq69qzhjPgB9sx6sjZGagRzdmGQd693EZ3vkYcpjw1CPha5aWCT3B0v2X5mwaGp7Uu1UVJ8gmtDl4BiijURfJQQ6lN6mMIb9+c2ASJu0oSGkN+67tfIQMnsPfh/0bEWcBoqEbJZpPrUHh22kUlgRDBD5F2nsTyf4W8710XtWgDWN5iJYz5ZTIGqthVHi+ynZUxlLgfXAo4Rc6publWT4lxFpbCU5SypGxkKL1bzP62b92b5yi7ayT6IlA3chz4TTOITk3kXnm7Xd+6UZeoZNbooZe5zuIjOmHX+81CxySy+RRNnTOGeAbMS0n4+sn7UkaZ7HBjcObbqJu5otnp2K2OdsKvFqe/XUAdpG/Dc+/oqYgMBL6CmkHXmHjQJCvXoBioI3z8tEGKid5InXjAIaK8zS72boGKn5aE3KuxdL8cLVIb+OD6QgN3V1ARgE89MM61QMCnezOcoeBBDM8xQZVXW8c3/kuRkvlbRLN/5phnITbXMQcKe5IYnQxL9Qs1HsKSGFfbOKQTsCTu9PirRVl17nuX8gicZGILYGvS+gPk=
+  project: default
+  on:
+    branch: master
+
+- provider: firebase
+  skip_cleanup: true
+  token:
+    secure: evB+gcM2JV8OEJM6QR7DDTew3a9I3DbfD7ASMVoMNukpYLLYzROnEnhfsXhnJGwkHqqghCaAbWR7jRby4Q8DD898GY2eI6u6P5EIytBIT5pCwBukuPPPrLTuUPpFu9cmUG7SLCnX3jKTn6kH3aK5z6ZM0E1SN1L2pXohWF7kXwXLcKkqxIo/3K72wL0BgWG80EIFewAsUZi2cJ7m4Oou43IKW96DfoeFMjZ40PZsxlUpjXrL2lVSeqm7iFHZTLKE0aBiMB/A7Q6uDRn87AlUa5sF8JJHjMnM/xfKGl9tsUujxh61uNBjBKhx7rorfFqKm/6LPB1ZhPo5E8Ao5jema4Jq98scqafnv+yDojPEf6yI7vWL34g+iq7tQ8mOrwsRBtjhUPO4olwG59TRF5lJPF0lQ6myQUc0WiRw2j835WhxUUjUOm1JbxsETCaSmcVPtpoql7XSlIoV+g+c/6d+vmNikcvoZ/L3oVmj4aR47D6JtnS+Y3PBQTazHBLZFvx8Vkddsdb2FwrXJic9kPDlyYQdPseYOzhXgLx/gyHGDm0GQb+RIroiMmJQjf6pteLwxp74H9mhIMnDvLYdZAU2OINmEoCTYm6XMK6ZiiWeZhN/XmgXw9KUENTk6p2LzESHZPBpQT+s8EvH72gRH7BRG1wD574z4jqleo6UBfpRk48=
+  project: staging
+  on:
+    branch: develop

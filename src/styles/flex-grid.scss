@@ -1,0 +1,65 @@
+// Simple flexbox based 12 column grid system
+
+$gutter: 1.5rem;
+$half-gutter: $gutter / 2;
+
+@mixin col-x($prefix, $columns, $less-spacing:0) {
+  @for $i from 1 through $columns {
+    $pct: ($i/12) * 100%;
+    .col-#{$prefix}-#{$i} {
+      width: calc(#{$pct} - #{$less-spacing});
+    //   max-width: calc(#{$pct} - #{$less-spacing});
+    //   min-width: calc(#{$pct} - #{$less-spacing});
+    }
+  }
+}
+
+
+.flex-grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-left: -1 * $half-gutter;
+  margin-right: -1 * $half-gutter;
+}
+.col {
+  display: block;
+  flex: 0 1 auto;
+//   flex:1;
+  width: calc(100% - #{$gutter});
+  padding: $half-gutter;
+}
+
+
+@media (min-width: 320px) {
+  @include col-x('xs', 12, $gutter);
+}
+@media (max-width: 320px) {
+  .col-xs-hidden { display: none !important; }
+}
+@media (min-width: 550px) {
+  @include col-x('sm', 12, $gutter);
+}
+@media (max-width: 550px) {
+  .col-sm-hidden { display: none !important; }
+}
+@media (min-width: 1000px) {
+  @include col-x('md', 12, $gutter);
+}
+@media (max-width: 1000px) {
+  .col-md-hidden { display: none !important; }
+}
+@media (min-width: 1200px) {
+  @include col-x('lg', 12, $gutter);
+}
+@media (max-width: 1200px) {
+  .col-lg-hidden { display: none !important; }
+}
+
+.flex-item-center {
+    align-self: center;
+    text-align: center;
+}
+.col-expand {
+    flex-grow: 1;
+}
